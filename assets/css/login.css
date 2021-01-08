@@ -1,53 +1,35 @@
-html,
-body{
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background: url(/assets/images/login_bg.jpg) no-repeat center;
-    background-size:cover;
-    box-sizing: border-box;
-    /* overflow: hidden; */
 }
-.login_mid{
-    box-sizing: border-box;
+body {
+    /* 需要在根目录下引入图片路径 */
+    background: url('/assets/images/login_bg.jpg') no-repeat;
+    background-size: cover;
+}
+.login_fm {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 400px;
-    height: 310px;
-    background-color: #fff;
 }
-.mid_header{
+.login_fm_hd{
     height: 60px;
-    background: url(/assets/images/login_title.png) no-repeat center;
+    background: url('/assets/images/login_title.png') center center no-repeat;
 }
-#mid_load{
-    background-color: #ccc;
-}
-#mid_reg{
-    display: none;
-}
-.login_mid{
+.layui-form{
     padding: 0 30px;
 }
-.layui-form>div.layui-form-item {
-    position: relative;
+.at_msg{
+    display: none;
 }
-.layui-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-}
-.layui-input{
-    padding-left: 32px;
-}
-.login_rt,
-.reg_rt{
-    text-align: right !important;
-}
-.layui-form-item a{
+.form_rt {
+    text-align: right;
     font-size: 12px;
 }
